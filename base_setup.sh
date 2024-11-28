@@ -9,3 +9,4 @@ handle_error()
 # Set the error handler to be called when an error occurs
 trap handle_error ERR
 
+read -p "End of bash base setup"
