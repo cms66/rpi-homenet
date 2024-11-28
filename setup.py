@@ -1,10 +1,6 @@
 # First boot - Base setup
 # Link from MD
 # wget https://raw.githubusercontent.com/cms66/rpi-homenet/main/setup.py; sudo python ./setup.py
-# Assumes
-# - rpi imager used to configure
-#    - user/password
-#    - hostname
 
 # Imports
 import subprocess, sys, os
@@ -18,7 +14,7 @@ usropt=input("Base seup done, press p to poweroff or any other key to reboot: ")
 os.remove(__file__) # Delete python script
 if usropt == 'p':
     print ("Poweroff selected")
-    subprocess.call(["shutdown", "-s", "now"])
+    #subprocess.call(["shutdown", "-s", "now"])
 else:
     print ("Reboot selected")
-    subprocess.call(["shutdown", "-r", "now"])
+    #subprocess.call(["shutdown", "-r", "now"])
